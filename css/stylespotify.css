@@ -1,0 +1,107 @@
+
+body{
+	color: silver !important;
+	padding: 2% 0% 2% 2%;
+	background-color: black !important;
+	text-decoration:none;
+	width:100%!important;
+	position:absolute;
+	
+}	
+img {
+	width: auto;
+	object-fit: cover;
+}
+
+.playingtitle{
+	padding-top: 10%;
+	font-size: 300%!important;
+	color: white;
+}
+.playingsinger{
+	font-size: 100%;
+}
+.head{
+	padding-top:4%;
+	height:4% !important;
+}
+.middle{
+	padding-top: 1%;
+	font-size: 140%;
+	border-style: solid;
+	margin-top: 1%;
+	border-width: thin;
+	border-color: #808080;
+}
+.songlist{
+	padding-top:1%;
+	font-size: 4%!important;
+	margin-bottom: 20%;
+}
+.bottom{
+	border-style: solid;
+	border-width: thin;
+	border-color: #808080;
+	width:98%;
+	margin-top:30% !important;
+	z-index: 10000 !important;
+	position: fixed !important;
+}
+.btn{
+	color:white!important;
+	background-color: black;
+	font-size:30%;
+}
+.playbutton .btn{
+	position:center !important;
+	padding-right:auto !important;
+	padding-left: 45% !important;
+}
+.back .btn{
+	padding-left:50% !important;
+}
+.shuffle .btn{
+	padding-left:50% !important;
+}
+a {
+	text-decoration: none !important;
+	color: white !important;
+	
+}
+
+li {
+	list-style: none;
+}
+/* NAVIGATION: */
+.navbar {
+	background-color: #1DB954 !important;
+	padding: 1% !important;
+	width: 100% !important;
+	z-index: 1000 !important;
+	position: fixed !important;
+	margin-left:-2%;
+	margin-top:-2%;
+}
+
+/* navigation items  */
+.nav-item	{
+	border-right: solid #2E8B57 1px;
+}
+.nav-item:hover	{
+	background-color:#2E8B57;
+	border-radius: 15%;
+}
+
+/* if window gets smaller */
+/* mobile or tablet view */
+.navbar-toggler	{
+	background-color: peru !important;
+	color: white !important;
+}
+
+/* active link*/
+#active	{
+	border: solid white 2px !important;
+	border-radius: 12% !important;
+}
+/* END OF NAVIGATION: */

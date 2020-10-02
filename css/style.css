@@ -1,0 +1,173 @@
+
+@font-face { 
+	font-family: hippie-schrift;
+	/*src: url(fonts/bellybeans.ttf);*/
+}
+
+body {
+	/*background-image: 
+		radial-gradient( 
+		  hsl(33,100%,50%) 29%, 
+		  hsl(19,56%,40%) 30%,
+		  hsl(33,100%,50%) 50%,
+		  hsl(19,56%,40%) 70%,
+		  hsl(33,100%,50%) 73%
+	);*/
+	background-image: repeating-radial-gradient(circle at center, darkorange, peru 3%, khaki 5%, darkorange 3%);	
+	font-family: hippie-schrift !important;
+	font-size: 100% !important;
+	margin-bottom: 0% !important;
+	width: 99% !important;
+	position: absolute;
+}
+
+h1 {
+	text-align: center !important;
+}
+
+img, video {
+	width: 100% !important;
+}
+
+a {
+	text-decoration: none !important;
+	color: white !important;
+	font-size: 125%;
+}
+
+li {
+	list-style: none;
+}
+
+/* NAVIGATION: */
+.navbar {
+	background-color: #cd661d !important;
+	padding: 1% !important;
+	width: 100% !important;
+	z-index: 1000 !important;
+	position: fixed !important;
+}
+
+/* navigation items  */
+.nav-item	{
+	border-right: solid brown 1px;
+}
+.nav-item:hover	{
+	background-color: sienna;
+	border-radius: 15%;
+}
+
+/* wenn fenster verkleinert wird */
+/* für handy und tablet ansicht */
+.navbar-toggler	{
+	background-color: peru !important;
+	color: white !important;
+}
+
+/* link der activ ist*/
+#active	{
+	border: solid white 2px !important;
+	border-radius: 12% !important;
+}
+/* ENDE NAVIGATION: */
+
+
+/* CONTAINER*/
+.container	{
+	margin: 0% auto 0% 16% !important;
+}
+
+.jukebox {
+	top: 0;
+	position: relative !important;
+	z-index: -10000;
+}
+
+.screen {
+	position: absolute;
+	width: 88.5%;
+	height: 30%;
+	margin: 18% 0% 0% 6.5%;
+	background-color: chocolate;
+	border-radius: 2%;
+	
+	/* drop shadow */
+	-webkit-box-shadow: 0px 0px 13px 6px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 13px 6px rgba(0,0,0,1);
+	box-shadow: 0px 0px 13px 6px rgba(0,0,0,1);
+
+}
+.btn {
+	z-index: 1 !important;
+}
+.btn-link {
+	color: white !important;
+	padding: 0% !important;
+	margin: 0% !important;
+}
+
+.buttons {
+	z-index: 1;
+	margin-top: 27.5%;
+	margin-left: 33%;
+	position: absolute;
+	height: 1%;
+}
+
+.buttons .btn{
+	padding: 0% 0.5% 0% 0.5% !important;
+	width: 5% !important;
+	background-color: unset !important;
+	border-radius: 100% !important;
+	border-color: black !important;
+	margin-top: 100% !important;
+}
+
+.brand {
+	background-image: url(../picture/mute.png) !important;
+	width: 100% !important;
+}
+.power {
+	background-color: red !important;
+	color:black !important;
+	font-size: 90% !important;
+
+}
+
+
+.mediothek, .carousel {
+	/*background-color: pink !important;*/
+	color: khaki;
+	margin: 1% 0% 0% 0%;
+	padding: 0% 5% 0% 5%;
+	width: 100%;
+	height: 100%;
+}
+
+.foot {
+	background-color: khaki;
+	color: chocolate;
+	margin: 3% 0% 0% 0% !important;
+	padding: 1% 0% 1% 0%;
+	width: 100%;
+}
+
+.stil .col-4 {
+	border-right: solid gold 1px;
+}
+.col-10 {
+	margin: 0% 1% 0% 1% !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	position: center !important;
+	margin: 37.5% -8% 0% -8%;
+}
+.songlist {
+	max-height: 290px;
+	height: 10%;
+	overflow-y: scroll; 
+}
+.song {
+	border-bottom: solid gold 1px;
+}
