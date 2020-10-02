@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title>Spotify</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<!-- css sheet for own style -->
+		<link rel="stylesheet" type="text/css" href="css/stylespotify.css" media="screen" />
+
+		<!-- binding bootstrap js -->
+		<script type="text/javascript" src="js/jukebox.js"></script>
+		
+		<!-- binding bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+		
+		<!-- binding icons -->
+		<script src="https://kit.fontawesome.com/3f16c4f907.js" crossorigin="anonymous"></script>
+
+		<!-- binding js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	</head>
+	
+	<!-- Body -->
+	 <body>
+	 
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg">
+
+			<!-- Collapse button -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+			aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Collapsible content -->
+			<div class="collapse navbar-collapse" id="basicExampleNav">
+				<!-- Links -->
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Jukebox</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="radio.html">Radio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"id="active" href="spotify.html">Spotify</a>
+					</li>
+				</ul>
+				<!-- Links -->
+				<form class="form-inline">
+					<div class="md-form my-0">
+						<span class="navbar-toggler-icon"></span>
+					</div>
+				</form>
+			</div>
+		</nav>
+			
+		<!-- Header -->	
+		<header>
+			
+			<!-- top row -->
+			<div class="row head">
+				<div class="song col-5" >	
+					<img src="picture\Spotify.jpg" class="image">
+				</div>
+				<div class="song col-7" >
+					<div class="col-12">
+						<legend class="playingtitle"> Spotify </legend>
+					</div>
+				</div>	
+			</div>
+			
+			<!-- middle rows -->
+			<div class="row middle">
+				<div class="titel col-4">
+				<legend> Titel</legend>
+				</div>
+				<div class="singer col-4">
+				<legend> Interpret</legend>
+				</div>
+				<div class="genre col-4">
+				<legend> Musikstil</legend>
+				</div>
+					
+			</div>
+
+			<div class="row song">
+				<div class="col-4">
+					<button type="button" class="btn btn-link" onclick="playAudio('spotify1')">
+					Three Little Birds
+					</button>
+					<audio id="spotify1" preload="auto" class="jbi">
+						<source src="music/Bob%20Marley/ThreeLittleBirds.mp3" type="audio/mp3">
+					</audio>
+				</div>
+						<div class="col-4">
+							Bob Marley
+						</div>
+						<div class="col-4">
+							Raggae
+						</div>
+			</div>
+
+			<div class="row song">
+				<div class="col-4">
+					<button type="button" class="btn btn-link" onclick="playAudio('spotify2')">
+						Is this love
+					</button>
+					<audio id="spotify2" preload="auto" class="jbi">
+						<source src="music/Bob%20Marley/Bob%20Marley%20-%20Is%20This%20Love.mp3" type="audio/mp3">
+					</audio>
+				</div>
+				<div class="col-4">
+					Bob Marley
+				</div>
+				<div class="col-4">
+					Raggae
+				</div>
+			</div>
+
+			<div class="row song">
+				<div class="col-4">
+					<button type="button" class="btn btn-link" onclick="playAudio('spotify3')">
+						Dancing Queen
+					</button>
+					<audio id="spotify3" preload="auto" class="jbi">
+						<source src="music/ABBA/AbbaDancingQueen.mp3" type="audio/mp3">
+					</audio>
+				</div>
+				<div class="col-4">
+					ABBA
+				</div>
+				<div class="col-4">
+					POP
+				</div>
+			</div>
+
+			<div class="row song">
+				<div class="col-4">
+					<button type="button" class="btn btn-link" onclick="playAudio('spotify4')">
+						Highway to hell
+					</button>
+					<audio id="spotify4" preload="auto" class="jbi">
+						<source src="music/AC%20-%20DC/AC-DC%20-%20Highway%20to%20Hell%20(Official%20Video).mp3" type="audio/mp3">
+					</audio>
+				</div>
+				<div class="col-4">
+					ACDC
+				</div>
+				<div class="col-4">
+					Rock
+				</div>
+			</div>
+
+			<div class="row song">
+				<div class="col-4">
+					<button type="button" class="btn btn-link" onclick="playAudio('spotify5')">
+						Delilah
+					</button>
+					<audio id="spotify5" preload="auto" class="jbi">
+						<source src="music/Tom%20Jones/Tom%20Jones%20-%20Delilah%201968%20(1973)%20(HQ%20Audio).mp3" type="audio/mp3">
+					</audio>
+				</div>
+				<div class="col-4">
+					Tom Jones
+				</div>
+				<div class="col-4">
+					Pop
+				</div>
+			</div>
+
+		</header>
+		<!-- Footer -->
+		<footer>
+		
+			<!-- bottom row / buttons -->
+			<div class="row bottom">
+				<div class="empty1 col-3">
+				
+				</div>
+				<div class="shuffle col-1">
+					<button class="btn" type="button">
+						<i class="fas fa-random"></i>
+					</button>
+				</div>
+				<div class="back col-1">
+					<button class="btn">
+						<i class="fas fa-backward"></i>
+					</button>	
+				</div>
+				<div class="playbutton col-2">
+					<button class="btn" onclick="pauseAudio()">
+						<i class="far fa-play-circle"></i>
+					</button>
+				</div>
+				<div class="skip col-1">
+					<button class="btn">
+						<i class="fas fa-forward"></i>
+					</button>
+				</div>
+				<div class="replay col-1">
+					<button class="btn">
+						<i class="fas fa-redo"></i>
+					</button>
+				</div>
+				<div class="empty1 col-3">
+				
+				</div>
+			</div>
+		</footer>
+
+	 </body>
+</html>

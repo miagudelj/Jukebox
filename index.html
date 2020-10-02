@@ -1,0 +1,456 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- css sheet for own style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+
+    <!-- binding bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- binding bootstrap js -->
+    <script type="text/javascript" src="js/jukebox.js"></script>
+
+    <!-- binding bootrstrap javascript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title></title>
+</head>
+
+<!-- Body -->
+<body class="jukebox">
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" id="active">Jukebox</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="radio.html">Radio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spotify.html">Spotify</a>
+                </li>
+            </ul>
+            <!-- Links -->
+            <form class="form-inline">
+                <div class="md-form my-0">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
+            </form>
+        </div>
+    </nav>
+</header>
+<content>
+    <div class="container">
+        <div class="col-1">
+        </div>
+        <div class="col-10">
+            <div class="screen">
+                <!-- mediothek -->
+                <div class="mediothek">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row" alt="First slide">
+
+                                    <!-- POP -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                A1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio1')">
+                                                                Dancing Queen
+                                                        </button>
+                                                            <audio id="myAudio1" preload="auto" class="jbi">
+                                                                <source src="./music/ABBA/AbbaDancingQueen.mp3" type="audio/mp3">
+                                                            </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        ABBA
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                A2
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio2')">
+                                                            Knowing me, knowing you
+                                                        </button>
+                                                        <audio id="myAudio2" preload="auto" class="jbi">
+                                                            <source src="./music/ABBA/Abba%20-%20Knowing%20Me,%20Knowing%20You%20(Official%20Video).mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        ABBA
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                A3
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio3')">
+                                                            Gimme! Gimme! Gimme!
+                                                        </button>
+                                                        <audio id="myAudio3" preload="auto" class="jbi">
+                                                            <source src="./music/ABBA/ABBA%20-%20GimmeGimmeGimme.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        ABBA
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                A4
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12 lied">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio4')">
+                                                            I've gotta get a message to you
+                                                        </button>
+                                                        <audio id="myAudio4" preload="auto" class="jbi">
+                                                            <source src="./music/Bee%20Gees/Bee%20Gees%20-%20I-ve%20Gotta%20Get%20A%20Message%20To%20You%20%5B1968%20Video%5D.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12 interpret">
+                                                        Bee Gees
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Rock -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                B1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio5')">
+                                                            Highway to hell
+                                                        </button>
+                                                        <audio id="myAudio5" preload="auto" class="jbi">
+                                                            <source src="./music/AC%20-%20DC/AC-DC%20-%20Highway%20to%20Hell%20(Official%20Video).mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        ACDC
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Raggae -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                C1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio6')">
+                                                            Is this Love
+                                                        </button>
+                                                        <audio id="myAudio6" preload="auto" class="jbi">
+                                                            <source src="music/Bob%20Marley/Bob%20Marley%20-%20Is%20This%20Love.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Bob Marley
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                C2
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio7')">
+                                                            Three little Birds
+                                                        </button>
+                                                        <audio id="myAudio7" preload="auto" class="jbi">
+                                                            <source src="music/Bob%20Marley/ThreeLittleBirds.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Bob Marley
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- foot -->
+                                <div class="foot">
+                                    <div class="row stil" alt="Second slide">
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 pop">
+                                                <button type="button" class="btn">
+                                                    <span>Pop</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 rock">
+                                                <button type="button" class="btn">
+                                                    <span>Rock</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 rb">
+                                                <button type="button" class="btn">
+                                                    <span>Reggae </span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END foot -->
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row" alt="Second slide">
+
+                                    <!-- Hiphop -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                D1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio8')">
+                                                            21 Problems
+                                                        </button>
+                                                        <audio id="myAudio8" preload="auto" class="jbi">
+                                                            <source src="music/50Cent/50%20Cent%20ft.%20Nate%20Dogg%20-%2021%20Questions%20(Official%20Video).mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        50 Cent ft Nate Dogg
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Jazz -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                E1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio9')">
+                                                            Relaxing Jazz Music
+                                                        </button>
+                                                        <audio id="myAudio9" preload="auto" class="jbi">
+                                                            <source src="music/Unknown/bensound-thejazzpiano.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Unknown
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- RnB -->
+                                    <div class="col-4 songlist">
+                                        <div class="row song">
+                                            <div class="col-2">
+                                                F1
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <button type="button" class="btn btn-link" onclick="playAudio('myAudio10')">
+                                                            Umbrella
+                                                        </button>
+                                                        <audio id="myAudio10" preload="auto" class="jbi">
+                                                            <source src="music/Rihanna/Rihanna%20Ft%20Jay-Z%20Umbrella%20With.mp3" type="audio/mp3">
+                                                        </audio>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        Rihanna
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- foot -->
+                                <div class="foot">
+                                    <div class="row stil" alt="Second slide">
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 hiphop">
+                                                <button type="button" class="btn">
+                                                    <span>Hip Hop</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 jazz">
+                                                <button type="button" class="btn">
+                                                    <span>Jazz</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="col-2">
+                                            </div>
+                                            <div class="col-7 reggae">
+                                                <button type="button" class="btn">
+                                                    <span>RnB</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END foot -->
+                            </div>
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- END mediothek -->
+            </div>
+            <div class="buttons">
+                <button type="button" class="btn" id="mute" onclick="muteAudio()">
+                    <img class="brand" src="picture/mute.png" alt="brand">
+                </button>
+                <button type="button" class="btn power" onclick="pauseAudio()">
+                    <span>off</span>
+                </button>
+            </div>
+            <div class="jukebox">
+                <img src="picture/jukebox_ganz.png" alt="">
+            </div>
+        </div>
+        <div class="col-1">
+        </div>
+    </div>
+</content>
+<!-- Footer -->
+<footer class="page-footer teal pt-4">
+
+</footer>
+</body>
+</html>

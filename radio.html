@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<title>Radio</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	 
+	<!-- binding css -->
+	<link rel="stylesheet" href="css/stylerradio.css" type="text/css" />
+ 
+	<!-- binding bootstrap css -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+
+	<!-- binding js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+	<!-- binding icons -->
+	<script src="https://kit.fontawesome.com/3f16c4f907.js" crossorigin="anonymous"></script>
+
+	<!-- binding bootstrap js -->
+	<script type="text/javascript" src="js/jukebox.js"></script>
+
+</head> 
+ 
+<!-- Body -->
+<body>
+	<header>
+		<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg">
+
+				<!-- Collapse button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+				aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Collapsible content -->
+				<div class="collapse navbar-collapse" id="basicExampleNav">
+					<!-- Links -->
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html" >Jukebox</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="active" href="radio.html">Radio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="spotify.html">Spotify</a>
+						</li>
+					</ul>
+					<!-- Links -->
+					<form class="form-inline">
+						<div class="md-form my-0">
+							<span class="navbar-toggler-icon"></span>
+						</div>
+					</form>
+				</div>
+			</nav>
+		</header>
+		
+		<!-- Backgroundpicture -->
+		<div class="image">
+			<img src="picture/radio.png" class="img-fluid" alt="Responsive image">
+		</div>
+
+		
+		<!-- On Button -->
+	<button type="button" class="btn btn-link" onclick="playAudio('radio1')">
+		<i class="fas fa-power-off"></i>
+	</button>
+	<audio id="radio1" preload="auto" class="jbi">
+		<source src="music/Unknown/Relaxing%20Jazz%20Music%20-%20Background%20Chill%20Out%20Music%20-%20Music%20For%20Relax,Study,Work.mp3" type="audio/mp3">
+	</audio>
+		
+</body> 
+</html>
